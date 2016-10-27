@@ -1,0 +1,21 @@
+body{
+	background-image: url(landingPage.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right bottom;
+	background-color: black;
+	background-size: cover;
+	background-size: max-height 100%;
+	}
+
+head{
+	background-color: black;
+	}
+	
+h1{
+	color: white;
+	}
+	
+p{
+	color: red;
+	}
