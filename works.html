@@ -8,12 +8,8 @@
 	<li style="float:right"><a class="active" href="about.html">About</a></li>
 </ul>
 <body>
-
-<h2>Image Modal</h2>
-<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
-<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
-
-<img id="myImg" src="landingPage.png" alt="test" width="300" height="200">
+<br>
+<img id="myImg" src="landingPage.png" alt="What was originally just a great picture taken by a friend in times long past, has been edited down to the backdrop for the homepage you liked so much. Edited with Adobe Photoshop." width="40%" height="40%">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -44,15 +40,11 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
-
 </body>
+
 <body>
-
-<h2>Image Modal</h2>
-<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
-<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
-
-<img id="myImg1" src="drugs.gif" alt="Trolltunga, Norway" width="300" height="200">
+<br><br>
+<img id="myImg1" src="elmo.gif" alt="This is, as you can see, an animated version of the famous elmo on fire picture. Made in Adobe Photoshop, by yours truly." width="30%" height="30%">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -67,6 +59,74 @@ var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('myImg1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+<img id="myImg2" src="kermit.gif" alt="Who doesn't love Kermit the Frog? I took the honor upon myself to create stuttery, jerky, life from what was a still picture. Made with Final Cut Pro." width="35%" height="35%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+</body>
+
+<body>
+<br><br>
+<img id="myImg3" src="bert.gif" alt="A monster-sized Bert, undoubtedly waving to his best friend, Ernie. I don't know why everything is muppets. It's just how it happened. Made with Adobe Photoshop." width="30%" height="30%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg3');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
